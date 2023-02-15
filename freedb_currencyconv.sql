@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Czas generowania: 28 Sty 2023, 10:49
+-- Czas generowania: 15 Lut 2023, 12:41
 -- Wersja serwera: 8.0.30
 -- Wersja PHP: 8.1.10
 
@@ -29,7 +29,6 @@ USE `freedb_currencyconv`;
 -- Struktura tabeli dla tabeli `users`
 --
 
-DROP TABLE IF EXISTS `users`;
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int NOT NULL AUTO_INCREMENT,
   `firstname` varchar(64) NOT NULL,
@@ -40,13 +39,6 @@ CREATE TABLE IF NOT EXISTS `users` (
   `activated` varchar(64) NOT NULL DEFAULT 'false',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
---
--- Zrzut danych tabeli `users`
---
-
-INSERT INTO `users` (`id`, `firstname`, `lastname`, `email`, `password`, `token`, `activated`) VALUES
-(20, 'Eryk', 'Świątoniowski', '164023@stud.prz.edu.pl', 'd8578edf8458ce06fbc5bb76a58c5ca4', 'jP253k6T', 'true');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
